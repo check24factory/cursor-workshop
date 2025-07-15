@@ -51,4 +51,4 @@ This demo is structured in distinct phases, each designed to highlight a specifi
 - **Expected Outcome:** A visually satisfying and functional application, demonstrating the final integration step and adding a "wow" factor for the audience.
 
 ---
-[⬅️ Back to Workshop Overview](../README.md) 
+[⬅️ Back to Workshop Overview](../README.md)
