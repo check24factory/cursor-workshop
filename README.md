@@ -6,9 +6,7 @@
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-Welcome to the live demo section of the Cursor Framework workshop! Each of the use cases below is designed to showcase a specific, powerful workflow that solves common workplace problems.
-
-We will walk through these demos to illustrate how you can go from a vague idea to a structured plan, from a plan to a well-defined task, and from a requirement to a fully-tested tool—all within a single, AI-native environment.
+Welcome to the interactive section of the Cursor Framework workshop!
 
 ---
 
@@ -22,7 +20,14 @@ You'll need `curl` to be installed to fetch the `uv` installer. Most Unix-like s
 
 ### 🛠️ Installation
 
-This project uses a `Makefile` to simplify the setup process. To install all dependencies and configure pre-commit hooks, run the following command:
+This project uses a `Makefile` to simplify the setup process.
+
+You can install `uv` separately if you wish:
+```bash
+make uv-install
+```
+
+To install all dependencies and configure pre-commit hooks, run the following command:
 
 ```bash
 make dev-setup
