@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "mcp-atlassian": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e", "JIRA_URL",
+        "-e", "JIRA_USERNAME",
+        "-e", "JIRA_API_TOKEN",
+        "ghcr.io/sooperset/mcp-atlassian:0.10.6"
+      ],
+      "env": {
+        "JIRA_URL": "https://c24-aiforge.atlassian.net/",
+        "JIRA_USERNAME": "surname.name@check24.de",
+        "JIRA_API_TOKEN": "Your_Jira_API_Token"
+      }
+    }
+  }
+}

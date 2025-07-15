@@ -12,11 +12,34 @@
     -   Name it `Cursor-Workshop` and copy the generated token. **Save it—you won't see it again!**
 
 2.  **Configure MCP:**
-    -   You will be given an `mcp.json` file.
-    -   Open it and fill in these three placeholders:
+    -   Head to cursor's settings and open the `mcp.json` file to enter the following values:
+    ```json
+    {
+        "mcpServers": {
+            "mcp-atlassian": {
+                "command": "docker",
+                "args": [
+                    "run",
+                    "-i",
+                    "--rm",
+                    "-e", "JIRA_URL",
+                    "-e", "JIRA_USERNAME",
+                    "-e", "JIRA_API_TOKEN",
+                    "ghcr.io/sooperset/mcp-atlassian:0.10.6"
+                ],
+                "env": {
+                    "JIRA_URL": "https://c24-aiforge.atlassian.net/",
+                    "JIRA_USERNAME": "surname.name@check24.de",
+                    "JIRA_API_TOKEN": "Your_Jira_API_Token"
+                }
+            }
+        }
+    }
+    ```
+    -   Replace the three placeholders:
         -   `JIRA_URL`: `https://your-company.atlassian.net`
         -   `JIRA_USERNAME`: `your.email@company.com`
-        -   `JIRA_API_TOKEN`: The token you just created.
+        -   `JIRA_API_TOKEN`: The token you just created in step 1.
     -   Save the file. Cursor will automatically connect.
 
 3.  **Find Your Project:** Gather your project key from Jira.
